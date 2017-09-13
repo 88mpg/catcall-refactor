@@ -1,0 +1,20 @@
+<section class="details">
+  <div class="details--container">
+    <div class="details--areas">
+      <h1>{{{ areas.title }}}</h1>
+      <ul>
+        {{#each areas.area}}
+        <li>{{{ this }}}</li>
+        {{/each}}
+      </ul>
+    </div>
+    <div class="details--rates">
+      <h1>{{{ rates.title }}}</h1>
+      <h2>{{{ rates.description }}}</h2>
+      <small>{{{ rates.extra }}}</small>
+      {{#each rates.details}}
+      <p>{{{ this }}}</p>
+      {{/each}}
+    </div>
+  </div>
+</section>

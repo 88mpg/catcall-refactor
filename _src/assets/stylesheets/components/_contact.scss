@@ -1,0 +1,42 @@
+.contact {
+  padding: $padding-y $padding-x;
+  background-color: $light;
+  border-top: 1px solid darken($light, 10%);
+  border-bottom: 1px solid darken($light, 10%);
+
+  &--container {
+    @include container($width);
+  }
+
+  h1 { padding-bottom: $padding-y; }
+
+  h2 {
+    max-width: 60rem;
+
+    @include max-screen($medium) {
+      font-size: 2rem;
+    }
+  }
+
+  &--options {
+    padding-bottom: $padding-y;
+
+    h2 { padding-bottom: $padding-y / 2; }
+
+    a {
+      @include cta;
+      &:not(:last-of-type) {
+        margin-right: $padding-x;
+        @include max-screen($medium) { margin-right: 0; }
+      }
+      &:hover { text-decoration: none; }
+      @include max-screen($medium) {
+        display: block;
+        text-align: center;
+        margin-bottom: $padding-x;
+      }
+    }
+  }
+
+  &--services {}
+}

@@ -1,0 +1,45 @@
+.details {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: $padding-y $padding-x;
+  @include max-screen($large) {
+    text-align: left;
+  }
+
+  &--container {
+    @include container($width);
+    @include max-screen($large) {
+      @include container(600);
+    }
+    display: flex;
+    justify-content: space-around;
+    @include max-screen($large) {
+      flex-direction: column;
+    }
+  }
+
+  &--areas {
+    @include max-screen($large) {
+      padding-bottom: $padding-y*2;
+    }
+  }
+
+  h1 { padding-bottom: $padding-y; }
+
+  li {
+    font-weight: 600;
+    padding: .3rem 0;
+    @include max-screen($large) {
+      list-style-type: circle;
+      margin-left: $padding-x;
+    }
+  }
+  p,
+  small {
+    line-height: 1.2;
+    max-width: 40rem;
+    display: block;
+    padding-bottom: $padding-x;
+  }
+}

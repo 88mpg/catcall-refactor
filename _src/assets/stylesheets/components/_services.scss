@@ -1,0 +1,25 @@
+.services {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: $padding-y $padding-x;
+  @include max-screen($large) {
+    text-align: left;
+  }
+
+  &--container {
+    @include container(600);
+
+    h1 { padding-bottom: $padding-y; }
+    p { padding-bottom: $padding-y; }
+    li {
+      font-weight: 600;
+      padding: .3rem 0;
+
+      @include max-screen($large) {
+        margin-left: $padding-x;
+        list-style: circle;
+      }
+    }
+  }
+}

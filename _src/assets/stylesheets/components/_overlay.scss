@@ -1,0 +1,44 @@
+.overlay {
+  background-color: rgba(0,0,0,0.7);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  color: $white;
+
+  &--container {
+    @include container($width);
+    padding: $padding-x;
+
+    ul {
+      display: flex;
+      li {
+        font-size: 1.6rem;
+        @include max-screen($small) {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  &--title {
+    margin-right: auto;
+    @include max-screen($small) {
+      display: none;
+    }
+  }
+
+  &--phone {
+    margin-right: $padding-x;
+    &::before { content: "Call "; }
+    @include max-screen($small) {
+      margin-right: auto;
+    }
+  }
+
+  &--email {
+    &::before {
+      content: "Email ";
+    }
+  }
+}

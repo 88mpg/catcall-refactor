@@ -1,0 +1,19 @@
+{
+  "contact": {
+    "options": {
+      "title": "Contact",
+      "description": "To set up a consultation or request more information about our cat sitting services, get in touch!",
+      "email": "hello@catcall.us",
+      "phone": "347-669-9842"
+    },
+    "services": {
+      "title": "Other services",
+      "description": "Plant Care/Watering, Feed Fish, Mail/Newspaper Collection & Midday Puppy Visits",
+      "small": "Don’t see something listed? Drop us an email to discuss more!"
+    }
+  },
+  "footer": {
+    "copyright": "&copy; 2017 Cat Call",
+    "top": "Back to top"
+  }
+}

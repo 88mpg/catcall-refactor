@@ -1,0 +1,13 @@
+.navigation {
+  &--container {
+    @include container($width);
+    padding: $padding-x;
+  }
+
+  h1 {
+    @include max-screen($small) {
+      font-size: 2.8rem;
+      text-align: center;
+    }
+  }
+}

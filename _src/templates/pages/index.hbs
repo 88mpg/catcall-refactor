@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{> meta meta }}
+  <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+<body role="main">
+  <header class="header">
+    {{> navigation navigation.main }}
+    {{> overlay navigation.overlay }}
+  </header>
+  {{> hero index }}
+  {{> services index.services }}
+  {{> details index.details }}
+  {{> about index.about }}
+  {{> contact footer.contact }}
+  {{> footer footer.footer }}
+  <script src="assets/scripts/bundle.js" charset="utf-8"></script>
+</body>
+</html>

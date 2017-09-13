@@ -1,0 +1,40 @@
+.about {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: $padding-y $padding-x;
+
+  &--container {
+    @include container($width);
+    @include max-screen($large) {
+      @include container(600);
+    }
+  }
+
+  h1 {
+    padding-bottom: $padding-y;
+    @include max-screen($large) {
+      text-align: left;
+    }
+  }
+
+  &--details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include max-screen($large) {
+      flex-direction: column;
+    }
+
+    p {
+      max-width: 55rem;
+      padding-right: 4rem;
+      text-align: left;
+      @include max-screen($large) {
+        max-width: 60rem;
+        padding-right: 0;
+        padding-bottom: $padding-y;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.footer {
+  padding: $padding-x * 2 $padding-x;
+
+  &--container {
+    @include container($width);
+    display: flex;
+  }
+
+  &--copyright {
+    margin-right: auto;
+  }
+
+  &--top {
+    &::after {
+      content: "\FFEA";
+      display: inline-block;
+      font-size: 120%;
+      padding-left: $padding-x / 2;
+      transition: transform 100ms ease-in-out;
+    }
+    &:hover {
+      &::after { transform: translate3d(0, -.2rem, 0); }
+    }
+  }
+}

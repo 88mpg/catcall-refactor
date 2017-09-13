@@ -1,0 +1,46 @@
+{
+  "hero": {
+    "image": ""
+  },
+  "services": {
+    "title": "In-Home Cat Sitting Services",
+    "description": "Headquartered in Fort Greene, Brooklyn, Cat Call provides in-home cat sitting and specialized care for your feline friend. Dedicated to the well being of your cat and home, we’re bonded, insured and trained in pet CPR. Simple and local. Cat Call us!",
+    "service": [
+      "Litter Maintenance",
+      "Feeding (including Special Diets)",
+      "Play Time",
+      "Love & Attention"
+    ]
+  },
+  "details": {
+    "areas": {
+      "title": "Areas Covered",
+      "area": [
+        "Boerum Hill",
+        "Brooklyn Heights",
+        "Clinton Hill",
+        "Cobble Hill",
+        "Dumbo",
+        "Fort Greene",
+        "Park Slope",
+        "Prospect Heights"
+      ]
+    },
+    "rates": {
+      "title": "Rates",
+      "description": "<strong>$25</strong> for <strong>30 minute visit</strong>",
+      "extra": "<strong>$3+</strong> per additional cat",
+      "details": [
+        "Full payment required before cat sitting commences.",
+        "Meet-and-greet is <strong>free!</strong>",
+        "<strong>$15</strong> for key return",
+        "We accept cash, check & PayPal"
+      ]
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "description": "Proud cat Mom of two highly energetic Sphynx and former owner of many happy goldfish, Aja is a New York native and a cat lover with a passion for all creatures great and small (mostly small).",
+    "image": "assets/images/about-herbie.jpg"
+  }
+}
