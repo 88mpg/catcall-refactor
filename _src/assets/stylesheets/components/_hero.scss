@@ -2,10 +2,24 @@
   height: 850px;
   background: url('../images/hero-background.jpg') no-repeat center center;
   background-size: cover;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @include max-screen($medium) {
     @include portrait {
       height: 100vh;
     }
+  }
+
+  &--container {
+    @include container($width);
+  }
+
+  &--learn_more {
+    @include cta;
   }
 }
