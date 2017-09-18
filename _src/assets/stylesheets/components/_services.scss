@@ -13,7 +13,7 @@
     h1 { padding-bottom: $padding-y; }
     p { padding-bottom: $padding-y; }
     li {
-      font-weight: 600;
+      // font-weight: 600;
       padding: .3rem 0;
 
       @include max-screen($large) {

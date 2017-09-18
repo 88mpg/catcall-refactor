@@ -4,13 +4,33 @@
   &--container {
     @include container($width);
     display: flex;
+    align-items: center;
+    @include max-screen($small) {
+      flex-direction: column;
+      // align-items: flex-start;
+
+      small {
+        display: inline-block;
+        padding: .6rem 0;
+      }
+    }
   }
 
   &--copyright {
-    margin-right: auto;
+    padding-right: $padding-x * 2;
+
+    @include max-screen($small) {
+      padding-right: 0;
+    }
+  }
+
+  img {
+    padding-right: $padding-x;
+    @include max-screen($small) { display: none; }
   }
 
   &--top {
+    margin-left: auto;
     &::after {
       content: "\FFEA";
       display: inline-block;
@@ -20,6 +40,10 @@
     }
     &:hover {
       &::after { transform: translate3d(0, -.2rem, 0); }
+    }
+
+    @include max-screen($small) {
+      margin-left: 0;
     }
   }
 }

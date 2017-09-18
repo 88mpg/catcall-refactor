@@ -5,7 +5,7 @@
   padding: $padding-y $padding-x;
 
   &--container {
-    @include container($width);
+    @include container(860);
     @include max-screen($large) {
       @include container(600);
     }

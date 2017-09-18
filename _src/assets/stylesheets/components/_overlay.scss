@@ -14,7 +14,7 @@
       display: flex;
       li {
         font-size: 1.6rem;
-        @include max-screen($small) {
+        @include max-screen($medium) {
           font-size: 1.2rem;
         }
       }
@@ -23,7 +23,7 @@
 
   &--title {
     margin-right: auto;
-    @include max-screen($small) {
+    @include max-screen($medium) {
       display: none;
     }
   }
@@ -31,7 +31,7 @@
   &--phone {
     margin-right: $padding-x;
     &::before { content: "Call "; }
-    @include max-screen($small) {
+    @include max-screen($medium) {
       margin-right: auto;
     }
   }

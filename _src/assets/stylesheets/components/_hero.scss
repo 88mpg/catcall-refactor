@@ -1,5 +1,4 @@
 .hero {
-  height: 850px;
   background: url('../images/hero-background.jpg') no-repeat center center;
   background-size: cover;
   text-align: center;
@@ -9,17 +8,42 @@
   justify-content: center;
   align-items: center;
 
-  @include max-screen($medium) {
-    @include portrait {
-      height: 100vh;
+  &--container {
+    @include container(1100);
+    background: url('../images/hero-cat.png') no-repeat bottom right;
+    height: 910px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20rem 0 $padding-y;
+
+    @include max-screen($large) {
+      align-items: center;
+      background: none;
+      height: auto;
     }
   }
 
-  &--container {
-    @include container($width);
+  &--logo {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    @include max-screen($x-large) {
+      padding-left: 0;
+    }
+    img {
+      padding-bottom: $padding-y;
+    }
   }
 
   &--learn_more {
-    @include cta;
+    display: block;
+    background: $white;
+    color: $black;
+    font-size: 2rem;
+    width: 20rem;
+    margin: auto;
+    line-height: 6.5rem;
   }
 }
