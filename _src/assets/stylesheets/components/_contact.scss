@@ -6,9 +6,13 @@
 
   &--container {
     @include container($width);
+    display: flex;
+    @include max-screen($medium) {
+      flex-direction: column;
+    }
   }
 
-  h1 { padding-bottom: $padding-y; }
+  h1 { padding-bottom: $padding-x; }
 
   h2 {
     max-width: 60rem;
@@ -20,11 +24,16 @@
 
   &--options {
     padding-bottom: $padding-y;
+    width: 65%;
 
     h2 { padding-bottom: $padding-y / 2; }
 
     a {
       @include cta;
+      border: 3px solid $primary;
+      font-weight: 900;
+      background: $white;
+      color: $black;
       &:not(:last-of-type) {
         margin-right: $padding-x;
         @include max-screen($medium) { margin-right: 0; }
@@ -37,6 +46,11 @@
       }
     }
   }
-
-  &--services {}
+  &--options,
+  &--services {
+    padding: 0 $padding-y;
+    @include max-screen($medium) {
+      padding: $padding-y $padding-x;
+    }
+  }
 }

@@ -1,10 +1,13 @@
 <section class="services">
   <div class="services--container">
     <h1>{{{ title }}}</h1>
-    <p>{{{ description }}}</p>
+    <!-- <p>{{{ description }}}</p> -->
     <ul>
       {{#each service}}
-      <li>{{{ this }}}</li>
+      <li>
+        <img src="/assets/images/{{ icon }}.svg" alt="">
+        {{{ title }}}
+      </li>
       {{/each}}
     </ul>
   </div>

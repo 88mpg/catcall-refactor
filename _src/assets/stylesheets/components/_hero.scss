@@ -7,11 +7,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid $primary;
 
   &--container {
-    @include container(1100);
-    background: url('../images/hero-cat.png') no-repeat bottom right;
-    height: 910px;
+    @include container($width);
+    height: 100vh;
+    max-height: 90rem;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -25,25 +26,45 @@
     }
   }
 
-  &--logo {
+  &--content {
     display: flex;
     flex-direction: column;
-    padding-left: 100px;
-    @include max-screen($x-large) {
-      padding-left: 0;
+    max-width: 45rem;
+    align-items: flex-start;
+
+    h1 {
+      color: $primary;
+      font-size: 7.2rem;
+      padding-bottom: $padding-x;
     }
-    img {
+    p {
+      font-weight: 300;
+      text-align: left;
+      color: $white;
       padding-bottom: $padding-y;
     }
+    img { padding-bottom: $padding-y; }
   }
 
   &--learn_more {
     display: block;
-    background: $white;
+    border-radius: 1rem;
+    background: $light;
     color: $black;
-    font-size: 2rem;
+    font-size: 1.6rem;
+    font-weight: 900;
+    text-transform: uppercase;
     width: 20rem;
-    margin: auto;
     line-height: 6.5rem;
+    transition: background 250ms ease-in-out, transform 100ms ease, box-shadow 100ms ease;
+    border: 5px solid $primary;
+    &:hover {
+      background: $primary;
+      text-decoration: none;
+    }
+    &:active {
+      box-shadow: none;
+      transform: translate3d(0,3px,0);
+    }
   }
 }

@@ -6,10 +6,22 @@
     "title": "In-Home Cat Sitting Services",
     "description": "Headquartered in Fort Greene, Brooklyn, Cat Call provides in-home cat sitting and specialized care for your feline friend. Dedicated to the well being of your cat and home, we’re bonded, insured and trained in pet CPR. Simple and local. Cat Call us!",
     "service": [
-      "Litter Maintenance",
-      "Feeding (including Special Diets)",
-      "Play Time",
-      "Love & Attention"
+      {
+        "title": "Litter Maintenance",
+        "icon": "poop"
+      },
+      {
+        "title": "Feeding<br/><small>(including Special Diets)</small>",
+        "icon": "food"
+      },
+      {
+        "title": "Play Time",
+        "icon": "play"
+      },
+      {
+        "title": "Love & Attention",
+        "icon": "love"
+      }
     ]
   },
   "details": {

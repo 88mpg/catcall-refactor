@@ -9,36 +9,49 @@
   &--container {
     @include container($width);
     padding: $padding-x;
+    display: flex;
+
 
     ul {
       display: flex;
+      margin-left: auto;
       li {
-        font-size: 1.6rem;
-        @include max-screen($medium) {
-          font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        font-size: 1.4rem;
+        a { padding-left: $padding-x / 3; }
+
+        &:not(:last-of-type) {
+          padding-right: $padding-x * 2;
         }
       }
     }
   }
 
-  &--title {
-    margin-right: auto;
-    @include max-screen($medium) {
-      display: none;
-    }
-  }
+  // &--title {
+  //   margin-right: auto;
+  //   @include max-screen($medium) {
+  //     display: none;
+  //   }
+  // }
 
-  &--phone {
-    margin-right: $padding-x;
-    &::before { content: "Call "; }
-    @include max-screen($medium) {
-      margin-right: auto;
-    }
-  }
+  // &--phone {
+  //   margin-right: $padding-x;
+  //   &::before { content: "Call "; }
+  //   @include max-screen($medium) {
+  //     margin-right: auto;
+  //   }
+  // }
+  //
+  // &--email {
+  //   &::before {
+  //     content: "Email ";
+  //   }
+  // }
 
-  &--email {
-    &::before {
-      content: "Email ";
-    }
+  svg {
+    fill: $primary;
+    height: 2rem;
+    .transparent { fill: rgba(0,0,0,0.7); }
   }
 }
