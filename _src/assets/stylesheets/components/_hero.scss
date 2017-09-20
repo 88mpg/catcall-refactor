@@ -21,7 +21,8 @@
     @include max-screen($large) {
       align-items: center;
       background: none;
-      height: auto;
+      height: 100vh;
+      padding-top: 16rem;
     }
   }
 
@@ -34,6 +35,11 @@
     }
     img {
       padding-bottom: $padding-y;
+
+      @include max-screen($large) {
+        max-height: 60vh;
+        width: auto;
+      }
     }
   }
 

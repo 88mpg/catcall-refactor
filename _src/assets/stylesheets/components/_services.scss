@@ -5,6 +5,7 @@
   padding: $padding-y $padding-x;
   @include max-screen($large) {
     text-align: left;
+    padding-bottom: 0;
   }
 
   &--container {
