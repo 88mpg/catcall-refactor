@@ -25,6 +25,12 @@
       padding-bottom: $padding-y;
     }
   }
+  
+  &--rates {
+    h2 {
+      max-width: 380px;
+    }
+  }
 
   h1 { padding-bottom: $padding-y; }
 
